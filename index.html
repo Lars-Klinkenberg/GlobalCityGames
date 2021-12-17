@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="google-site-verification" content="VxnSfQQjbzLDd9Fw3zZ_1EjhLBYDq1F1c7JFeJa56Q8" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/validateForm.js" charset="utf-8"></script>
+
+    <title></title>
+  </head>
+  <body>
+<!--   Navigation  -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home        |    </a></li>
+        <li><a href="#aboutUs">        Über Uns        |</a></li>
+        <li><a href="#team">        Das Team        |</a></li>
+        <li><a href="#kontakt">         Kontakt        | </a></li>
+        <li style="margin-right: 15px;"><a href="html/impressum.html">         Impressum        </a></li>
+      </ul>
+    </nav>
+<!-- Home -->
+    <section id="home">
+      <div class="title">
+        <h1>GlobalCityGames</h1>
+        <h2>Dein Gaming Netzwerk!</h2>
+        <a href="#aboutUs">
+          <img id="pfeil" src="img/pfeil.png" alt="pfeil">
+        </a>
+      </div>
+    </section>
+<!-- Über Uns  -->
+    <section id="aboutUs">
+      <div class="überUns">
+        <h1> Über Uns</h1>
+        <hr>
+        <p>
+          Wir sind ein deutsches Multigaming-Netzwerk, das seit Anfang 2015 existiert. Wir sind hier, um dir, oder euch, die Möglichkeit zu bieten, nicht nur alleine zu zocken, sondern auch mit anderen. Denn, wovon wir überzeugt sind: Je mehr, desto besser!
+        </p>
+        <i class='fab fa-teamspeak' style='font-size:40px'>: <a href="ts3server://globalcitygames.de"> GlobalCityGames.de</a></i>
+      </div>
+    </section>
+<!-- Das Team -->
+                  <!-- Keine Leerzeichen bei der Beschreibung  -->
+     <section id="team">
+       <h1>Das Team</h1>
+       <hr>
+       <div class="team">
+
+<!-- Sub 1 -->
+         <div class="teammember"id="sub1">
+           <h3>Supporter</h3>
+           <div>
+             <img src="img/supporter1.png" alt="Hier sollte ein Bild sein" class="img">
+             <div class="beschreibung">
+              <h4>Medienbeauftragte</h4>
+             </div>
+           </div>
+            <h4 class="name">Passi</h4>
+         </div>
+
+<!-- Owner -->
+         <div class="teammember" id="owner">
+           <h3>Owner</h3>
+           <img src="img/owner.png" alt="Hier sollte ein Bild Sein" class="img">
+           <div class="beschreibung">
+             <h4>Netzwerkleitung</h4>
+           </div>
+           <h4>nono | Joel</h4>
+         </div>
+<!-- Admin -->
+         <div class="teammember" id="admin">
+           <h3>Admin</h3>
+           <img src="img/admin.png" alt="Hier sollte ein Bild Sein" class="img">
+           <div class="beschreibung">
+             <!-- <h4>Webseitenverwaltung</h4> -->
+             <h4>Serververwaltung</h4>
+           </div>
+           <h4>HerrHirnlos</h4>
+         </div>
+
+<!-- Bewerben -->
+         <div class="bewerben">
+           <h2>Bewerben</h2>
+           <hr>
+           <p>
+             Du bist engagiert, möchtest ein aktiver Teil unseres Netwerkes werden und hast Erfahrung im Programmieren und mit Technik? Dann bewirb dich hier als Techniker! (Oder einfach als Supporter, falls letzteres nicht der Fall sein sollte und du uns trotzdem unterstützen möchtest) Ab dort stehen dir Aufstiegsmöglichkeiten zum Moderatoren, Admin, etc. ebenfalls zur Verfügung.
+           </p>
+         </div>
+      </section>
+<!-- Kontakt -->
+      <section id="kontakt">
+        <div class="Kontakt">
+          <h1>Kontakt</h1>
+          <hr>
+          <!-- action="https://mailthis.to/info@globalcitygames.com" -->
+          <form name="kontaktform" class="form" action="php/form.php" method="post">
+            <input type="text" id="name" name="name"placeholder="Name" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+            </br>
+            <input type="text" id="betreff" name="betreff" placeholder="Betreff" required>
+            </br>
+            <textarea name="nachricht" id="nachricht" rows="8" cols="80" placeholder="Nachricht" required></textarea>
+            </br>
+            <button type="submit" name="Senden">Senden</button>
+          </form>
+          <div class="social">
+            <a href="https://de-de.facebook.com/GlobalCityGames/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/globalcitygames?lang=de" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UC_mv1oGb3PAWlJZ4B0sjhuw" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/globalcitygames.de/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://steamcommunity.com/groups/GlobalCityGames" target="_blank" class="fa fa-steam"></a>
+          </div>
+
+        </div>
+        <p class="footer">
+          <!-- ©GlobalCityGames -->
+        </p>
+      </section>
+</body>
+<footer>
+© 2021 GlobalCityGames. All rights reserved.
+</footer>
+</html>

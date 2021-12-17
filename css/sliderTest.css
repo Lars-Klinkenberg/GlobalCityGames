@@ -1,0 +1,49 @@
+html{
+  /* background-color: green; */
+}
+/*---------------------------------- Das Team -------------------------------------------- */
+.team img {
+  height: 200px;
+  width: 200px;
+}
+/* ~~~~~ Teammember ~~~~~   */
+div .teammember{
+  float: left;
+  width: 20%;
+
+  text-align: center;
+}
+div .teammember h3{
+  font-size: 30px;
+}
+.team h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.team hr{
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.img{
+  opacity: 1;
+  transition: .5s ease;
+backface-visibility: hidden;
+}
+.beschreibung{
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  text-align: center;
+}
+.teammember:hover .img{
+  opacity: 0.3;
+}
+.teammember:hover .beschreibung{
+  opacity: 1;
+}

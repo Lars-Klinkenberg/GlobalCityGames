@@ -1,0 +1,426 @@
+html,body{margin: 0; padding: 0; height: 100%;text-align: center;}
+section{min-height: 100%;margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+#mobile_visible{visibility: hidden;height: 0;display: none;}
+h1,h2,h3,h4,a{
+    text-transform: uppercase;
+    font-family:monospace;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+/*---------------------------------- Überschriften -------------------------------------------- */
+h1{
+  font-size: 90px;
+  text-align: center;
+  margin: 0;
+  top: -100px;
+  padding-top: 20%;
+}
+
+h2{
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+h3{
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+h4{
+  font-size: 20px;
+  padding: 0;
+  margin: 20px;
+}
+/*---------------------------------- Navigation -------------------------------------------- */
+nav{
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+nav ul{
+  float: right;
+  padding: 0;
+}
+
+nav ul li{
+  float: left;
+  margin-right: 5px;
+}
+
+nav a{
+  font-size: 20px;
+  color: black;
+}
+ul :hover{
+  font-size: 20.5px;
+}
+/*---------------------------------- Home -------------------------------------------- */
+#pfeil{
+  height: 50px;
+  width: 50px;
+  /* background: lightgrey; */
+  border-radius: 50%;
+  margin: 2%;
+}
+
+#home{
+  background-image: url("../img/skyline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------- Über Uns -------------------------------------------- */
+#aboutUs{
+overflow: hidden;
+display: table;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.überUns a{
+  color: black;
+}
+.überUns h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.überUns hr{
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.überUns{
+  /* margin-top: 10%; */
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+}
+.überUns p{
+  width: 50%;
+  /* display: table-cell;
+  vertical-align: middle; */
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 1%;
+  font-size: 25px;
+}
+.überUns i{
+  margin-top: 15%;
+}
+/*---------------------------------- Das Team -------------------------------------------- */
+.team img {
+  height: 200px;
+  width: 200px;
+}
+/* ~~~~~ Teammember ~~~~~   */
+div .teammember{
+  display: block;
+  /* float: left; */
+  width: 20%;
+  margin-bottom: 5%;
+  text-align: center;
+
+}
+div .teammember h3{
+  font-size: 30px;
+}
+#team h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 5%;
+}
+#team hr{
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.team h4{
+  margin: 0;
+}
+.team{
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+
+}
+
+/* ------------------------------
+Hover
+------------------------------ */
+
+.img{
+  opacity: 1;
+  transition: .5s ease;
+backface-visibility: hidden;
+
+}
+.beschreibung{
+  /* height: 200px; */
+  /* width: 200px; */
+  opacity: 0;
+  /* position: absolute; */
+  /* top:0; */
+  /* left: 0; */
+  margin: 0;
+/* display: none; */
+    text-align: center;
+  transform: translate(0%, -500%);
+  -ms-transform: translate(0%, -100%);
+}
+
+#sub1.teammember:hover .img{
+  opacity: 0.2;
+}
+#sub1.teammember:hover .beschreibung{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+/* #sub1.teammember:hover .name{
+  opacity: 1;
+  opacity: 0;
+  transition: .5s ease;
+  backface-visibility: hidden;
+} */
+
+#sub2.teammember:hover .img{
+  opacity: 0.2;
+}
+#sub2.teammember:hover .beschreibung{
+  opacity: 1;
+}
+#mod.teammember:hover .img{
+  opacity: 0.2;
+}
+#mod.teammember:hover .beschreibung{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+#owner.teammember:hover .img{
+  opacity: 0.2;
+}
+#owner.teammember:hover .beschreibung{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+#admin.teammember:hover .img{
+  opacity: 0.2;
+}
+#admin.teammember:hover .beschreibung{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+
+
+/* ~~~~~ Bewerben ~~~~~   */
+.bewerben{
+  width: 60%;
+  height: 40%;
+  /* margin-top: 25%; */
+  /* margin-left: 20%; */
+  text-align: center;
+}
+/* div .bewerben h2{
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 6%;
+} */
+.bewerben p{
+  font-size: 25px;
+}
+.bewerben hr{
+  width: 35%;
+  border: 1px solid black;
+  margin-bottom: 1%;
+}
+#team{
+  background-image: url("../img/10.jpg");
+  /* https://unsplash.com/photos/tvAHVu1792A    -> 6  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+/*---------------------------------- Kontakt -------------------------------------------- */
+.Kontakt{
+  /* margin-top: 200px; */
+  height: 95%;
+}
+.Kontakt h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.Kontakt hr{
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+#kontakt{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ~~~~~ Form ~~~~~   */
+input,textarea{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5%;
+  font-size: 15px;
+  color: black;
+  padding: 0.5%;
+  width: 100%;
+}
+ textarea{
+  height: 300px;
+}
+ input{
+  height: 25px;
+}
+ button{
+  width: 15%;
+  height: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 0.5%;
+  border: 1px solid black;
+  font-size: 15px;
+  background-color: #e6e6e6;
+}
+/* ~~~~~ Icons ~~~~~   */
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  margin: 2%;
+  margin-top: 10%;
+  border: 2px solid black;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+.footer{
+  /* left: 0; */
+  /* bottom: 0; */
+  /* float: left; */
+  /* margin-top: 40%; */
+  /* position: absolute; */
+}
+footer{
+  height: 5%;
+  width: 100%;
+  background-color: #171717;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/*######### Responsive #########*/
+  /* @media only screen and (max-width: 1000px){
+  #mobile_invisible{
+
+    display: none;
+  }
+#mobile_visible{
+  visibility: visible;
+  display: inherit;
+}
+.mobile_bewerben{
+
+  height: 200px;
+  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bewerben h2{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.bewerben hr{
+  width: 30%;
+  border: 1px solid black;
+  margin-bottom: 5%;
+}
+.bewerben{
+
+}
+.bewerben p{
+  width: 50%;
+
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 1%;
+  font-size: 25px;
+}
+
+} */
